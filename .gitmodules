@@ -1,0 +1,3 @@
+[submodule "sites/all/modules/bakery_user"]
+	path = sites/all/modules/bakery_user
+	url = https://github.com/dianedouglas/bakery_user.git
