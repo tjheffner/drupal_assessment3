@@ -1,0 +1,15 @@
+<?php
+function bakery_user_menu() {
+    $items = array();
+    $items['welcome'] = array(
+        'title' => 'Hi There!',
+        'page callback' => 'welcome_new_user',
+        'access callback' => TRUE,
+        'type' => MENU_CALLBACK,
+    );
+    return $items;
+}
+
+function welcome_new_user() {
+    return "Hello";
+}
