@@ -1,0 +1,5 @@
+name = Comment Update
+description = Removes the subject from the comment form box for Cameron's bakery.
+package = Epicodus Examples
+core = 7.x
+files[] = comment_update.module
