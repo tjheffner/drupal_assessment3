@@ -1,15 +1,20 @@
 <?php
+
+//this doesn't really do much except call the redirect function below
 function bakery_user_menu() {
     $items = array();
     $items['welcome'] = array(
-        'title' => 'Hi There!',
-        'page callback' => 'welcome_new_user',
+        'title' => 'Guestbook',
+        'page callback' => 'bakery_user_user_login',
         'access callback' => TRUE,
         'type' => MENU_CALLBACK,
     );
     return $items;
 }
 
-function welcome_new_user() {
-    return "Hello";
+
+//I renamed the page you created ('welcome_new_user') to ('guestbook')
+//to better represent what cameron wants
+function bakery_user_user_login(&$edit, $account) {
+    $_GET['destination'] = 'guestbook';
 }
